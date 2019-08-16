@@ -53,7 +53,6 @@
   <ItemGroup>
     <Compile Include="DataContext.cs" />
     <Compile Include="DbInitializer.cs" />
-    <Compile Include="EFStatus.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\City.cs" />
     <Compile Include="Entities\FirstName.cs" />
@@ -70,9 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data Juggler.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
