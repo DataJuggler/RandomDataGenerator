@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D2F15FB0-ED7E-4B59-A64A-F623B7CDCB1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccessComponent</RootNamespace>
+    <AssemblyName>DataAccessComponent</AssemblyName>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataJuggler.Core.UltimateHelper, Version=1.3.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\RandomDataGenerator\packages\DataJuggler.Core.UltimateHelper.1.3.4\lib\net461\DataJuggler.Core.UltimateHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="DataJuggler.Net, Version=5.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\RandomDataGenerator\packages\DataJuggler.Net.5.5.1\lib\net461\DataJuggler.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataManager\AddressManager.cs" />
+    <Compile Include="DataManager\DataHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataManager\FirstNameManager.cs" />
+    <Compile Include="DataManager\LastNameManager.cs" />
+    <Compile Include="DataManager\MemberAddressViewManager.cs" />
+    <Compile Include="DataManager\MemberManager.cs" />
+    <Compile Include="DataManager\Readers\AddressReader.cs" />
+    <Compile Include="DataManager\Readers\FirstNameReader.cs" />
+    <Compile Include="DataManager\Readers\LastNameReader.cs" />
+    <Compile Include="DataManager\Readers\MemberAddressViewReader.cs" />
+    <Compile Include="DataManager\Readers\MemberReader.cs" />
+    <Compile Include="DataManager\Readers\StateReader.cs" />
+    <Compile Include="DataManager\Readers\StreetNameReader.cs" />
+    <Compile Include="DataManager\Readers\ZipCodeReader.cs" />
+    <Compile Include="DataManager\SqlParameterHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataManager\DataManager.cs" />
+    <Compile Include="DataManager\Readers\TemporaryReader.cs" />
+    <Compile Include="DataManager\StateManager.cs" />
+    <Compile Include="DataManager\StreetNameManager.cs" />
+    <Compile Include="DataManager\Writers\AddressWriter.cs" />
+    <Compile Include="DataManager\Writers\AddressWriterBase.cs" />
+    <Compile Include="DataManager\Writers\FirstNameWriter.cs" />
+    <Compile Include="DataManager\Writers\FirstNameWriterBase.cs" />
+    <Compile Include="DataManager\Writers\LastNameWriter.cs" />
+    <Compile Include="DataManager\Writers\LastNameWriterBase.cs" />
+    <Compile Include="DataManager\Writers\MemberAddressViewWriter.cs" />
+    <Compile Include="DataManager\Writers\MemberAddressViewWriterBase.cs" />
+    <Compile Include="DataManager\Writers\MemberWriter.cs" />
+    <Compile Include="DataManager\Writers\MemberWriterBase.cs" />
+    <Compile Include="DataManager\Writers\StateWriter.cs" />
+    <Compile Include="DataManager\Writers\StateWriterBase.cs" />
+    <Compile Include="DataManager\Writers\StreetNameWriter.cs" />
+    <Compile Include="DataManager\Writers\StreetNameWriterBase.cs" />
+    <Compile Include="DataManager\Writers\TemporaryWriter.cs" />
+    <Compile Include="DataManager\Writers\ZipCodeWriter.cs" />
+    <Compile Include="DataManager\Writers\ZipCodeWriterBase.cs" />
+    <Compile Include="DataManager\ZipCodeManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataManager\DataConnector.cs" />
+    <Compile Include="StoredProcedureManager\DeleteProcedures\DeleteAddressStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\DeleteProcedures\DeleteFirstNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\DeleteProcedures\DeleteLastNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\DeleteProcedures\DeleteMemberStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\DeleteProcedures\DeleteStateStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\DeleteProcedures\DeleteStreetNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\DeleteProcedures\DeleteZipCodeStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\DeleteProcedures\TemporaryDeleteProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FetchAllAddressesStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FetchAllFirstNamesStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FetchAllLastNamesStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FetchAllMemberAddressViewsStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FetchAllMembersStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FetchAllStatesStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FetchAllStreetNamesStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FetchAllZipCodesStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FetchAllZipCodeViewsStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FindAddressStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FindFirstNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FindLastNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FindMemberStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FindStateStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FindStreetNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\FindZipCodeStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\FetchProcedures\TemporaryFetchProcedure.cs" />
+    <Compile Include="StoredProcedureManager\InsertProcedures\InsertAddressStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\InsertProcedures\InsertFirstNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\InsertProcedures\InsertLastNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\InsertProcedures\InsertMemberStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\InsertProcedures\InsertStateStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\InsertProcedures\InsertStreetNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\InsertProcedures\InsertZipCodeStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\InsertProcedures\TemporaryInsertProcedure.cs" />
+    <Compile Include="StoredProcedureManager\StoredProcedure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoredProcedureManager\StoredProcedureCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoredProcedureManager\StoredProcedureTypeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoredProcedureManager\UpdateProcedures\TemporaryUpdateProcedure.cs" />
+    <Compile Include="StoredProcedureManager\UpdateProcedures\UpdateAddressStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\UpdateProcedures\UpdateFirstNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\UpdateProcedures\UpdateLastNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\UpdateProcedures\UpdateMemberStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\UpdateProcedures\UpdateStateStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\UpdateProcedures\UpdateStreetNameStoredProcedure.cs" />
+    <Compile Include="StoredProcedureManager\UpdateProcedures\UpdateZipCodeStoredProcedure.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data Juggler.ico" />
+    <Content Include="StoredProcedureManager\StoredProcedureSQL\UpdateProcPermissions.sql" />
+    <Content Include="Tools.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ObjectLibrary\ObjectLibrary.csproj">
+      <Project>{7C4BE09B-0CCA-49BA-B716-6EAEEA22ADC9}</Project>
+      <Name>ObjectLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

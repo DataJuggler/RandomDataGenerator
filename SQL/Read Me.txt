@@ -1,0 +1,15 @@
+Extract the Zip file and it becomes a 24 meg SQL Script that inserts the tables and fields for the
+RandomData Database.
+
+The dabase contains the following tables and records
+
+1. Address - 0 Records
+2. FirstName - 5,163 Records
+3. LastName - 6,080 Records
+4. Member - 0 Records
+5. StreetName - 52,680 Records
+6. ZipCode - 74,022 Records
+
+Random Data Generator builds the Member & Address tables.
+
+

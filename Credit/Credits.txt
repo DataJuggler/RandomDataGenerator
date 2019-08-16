@@ -1,0 +1,21 @@
+https://github.com/danielmiessler/SecLists
+StreetNames.txt
+
+US 500 Samples
+https://www.briandunning.com/sample-data/
+
+
+First and Last Names
+https://github.com/smashew
+
+I found (technically Google found it for me) the USA-zip.txt postal codes on a websites called Pier2Pier.com. 
+It was in Excel Format which is more of a security risk than a text document so I exported to Text.
+Not sure of the author or this site, but it worked for my budget of $0.
+
+Thanks to all.
+
+
+
+
+
+
