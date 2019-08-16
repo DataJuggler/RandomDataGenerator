@@ -42,7 +42,7 @@
       <HintPath>..\packages\DataJuggler.Net.5.5.1\lib\net461\DataJuggler.Net.dll</HintPath>
     </Reference>
     <Reference Include="DataJuggler.Win.Controls, Version=5.5.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DataJuggler.Win.Controls.5.5.5\lib\net461\DataJuggler.Win.Controls.dll</HintPath>
+      <HintPath>..\..\..\packages\DataJuggler.Win.Controls.5.5.5\lib\net461\DataJuggler.Win.Controls.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
