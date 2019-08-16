@@ -1,4 +1,6 @@
-Extract the Zip file and it becomes a 24 meg SQL Script that inserts the tables and fields for the
+First create a new database in SQL Server Management Studio called RandomData.
+
+Next, extract the Zip file and it becomes a 24 meg SQL Script that inserts the tables and fields for the
 RandomData Database.
 
 The dabase contains the following tables and records
