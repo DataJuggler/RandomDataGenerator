@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomDataGenerator", "RandomDataGenerator\RandomDataGenerator.csproj", "{EBECC184-EA99-4ABF-99BB-A9EF702759D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomDataGenerator", "Code\RandomDataGenerator\RandomDataGenerator\RandomDataGenerator.csproj", "{EBECC184-EA99-4ABF-99BB-A9EF702759D4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataTier.Net.Data", "DataTier.Net.Data", "{B87596BE-5755-4322-8488-93275E7C9900}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLogicComponent", "..\RandomDataLib\DataTier.Net.RandomData\ApplicationLogicComponent\ApplicationLogicComponent.csproj", "{DBCFCCF2-C6B3-402D-905F-0EBA77F8E9B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLogicComponent", "Code\RandomDataLib\DataTier.Net.RandomData\ApplicationLogicComponent\ApplicationLogicComponent.csproj", "{DBCFCCF2-C6B3-402D-905F-0EBA77F8E9B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessComponent", "..\RandomDataLib\DataTier.Net.RandomData\DataAccessComponent\DataAccessComponent.csproj", "{D2F15FB0-ED7E-4B59-A64A-F623B7CDCB1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessComponent", "Code\RandomDataLib\DataTier.Net.RandomData\DataAccessComponent\DataAccessComponent.csproj", "{D2F15FB0-ED7E-4B59-A64A-F623B7CDCB1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGateway", "..\RandomDataLib\DataTier.Net.RandomData\DataGateway\DataGateway.csproj", "{2A156C95-1B12-47FE-A2EA-CDF999D98817}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGateway", "Code\RandomDataLib\DataTier.Net.RandomData\DataGateway\DataGateway.csproj", "{2A156C95-1B12-47FE-A2EA-CDF999D98817}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectLibrary", "..\RandomDataLib\DataTier.Net.RandomData\ObjectLibrary\ObjectLibrary.csproj", "{19158508-F27F-4340-AAD4-10B4FBB54404}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectLibrary", "Code\RandomDataLib\DataTier.Net.RandomData\ObjectLibrary\ObjectLibrary.csproj", "{19158508-F27F-4340-AAD4-10B4FBB54404}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomData.EF.Data", "RandomDataGenerator\EntityFramework.Data\RandomData.EF.Data\RandomData.EF.Data.csproj", "{48719A60-686E-4447-80B8-5A78599CF69F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomData.EF.Data", "Code\RandomDataGenerator\RandomDataGenerator\EntityFramework.Data\RandomData.EF.Data\RandomData.EF.Data.csproj", "{48719A60-686E-4447-80B8-5A78599CF69F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomMemberCreator", "RandomMemberCreator\RandomMemberCreator.csproj", "{671079DF-6A29-48A0-8198-F5340A08D32F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomMemberCreator", "Code\RandomDataGenerator\RandomMemberCreator\RandomMemberCreator.csproj", "{671079DF-6A29-48A0-8198-F5340A08D32F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
